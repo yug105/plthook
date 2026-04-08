@@ -1,6 +1,6 @@
 # PLTHook
 
-[![tests](https://github.com/kubo/plthook/actions/workflows/run-tests.yml/badge.svg)](https://github.com/kubo/plthook/actions/workflows/run-tests.yml)
+[![tests](https://github.com/metacall/plthook/actions/workflows/run-tests.yml/badge.svg)](https://github.com/metacall/plthook/actions/workflows/run-tests.yml)
 
 ## What is plthook.
 
@@ -240,14 +240,13 @@ void print_plt_entries(const char *filename)
 | Windows 32-bit and x64 (MSVC)                                         | plthook_win32.c | tested using [github actions]             |
 | macOS (intel)                                                         | plthook_osx.c   | tested using [github actions]             |
 | macOS (arm)                                                           | plthook_osx.c   | tested using [github actions]             |
-| Windows 32-bit and x64 (Mingw32 and Cygwin)                           | plthook_win32.c | perhaps(\*2)                              |
+| Windows 32-bit and x64 (Mingw32 and Cygwin)                           | plthook_win32.c | tested using [github actions]             |
 | Solaris x86_64                                                        | plthook_elf.c   | perhaps(\*1)                              |
-| FreeBSD i386 and x86_64 except i386 program on x86_64 OS              | plthook_elf.c   | perhaps(\*1)                              |
-| Android(\*3)                                                          | plthook_elf.c   | perhaps(\*2)                              |
+| FreeBSD x86_64 and arm64                                              | plthook_elf.c   | tested using [github actions]             |
+| NetBSD x86_64 and arm64                                               | plthook_elf.c   | tested using [github actions]             |
+| Android                                                               | plthook_elf.c   | tested using [github actions]             |
 
 *1 Tested on a local VM before.  
-*2 Tested on travis-ci.org before.  
-\*3 Contributed by [Daniel Deptford][].
 
 [QEMU]: http://www.qemu.org/
 [Daniel Deptford]: https://github.com/redmercury
@@ -261,7 +260,7 @@ void print_plt_entries(const char *filename)
 [#29]: https://github.com/kubo/plthook/issues/29
 [#45]: https://github.com/kubo/plthook/pull/45
 [#48]: https://github.com/kubo/plthook/issues/48
-[github actions]: https://github.com/kubo/plthook/actions/workflows/run-tests.yml
+[github actions]: https://github.com/metacall/plthook/actions/workflows/run-tests.yml
 
 ## License
 
